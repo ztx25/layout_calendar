@@ -33,7 +33,7 @@
     }
   }
 
-  $days: (
+  $weekDays: (
     mon: 0,
     tue: 1,
     wed: 2,
@@ -43,7 +43,7 @@
     sun: 6,
   );
 
-  @each $day, $num in $days {
+  @each $day, $num in $weekDays {
     &-#{$day} div:first-child {
       margin-left: $cellSize * $num + $num;
     }
